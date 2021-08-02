@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Contest</title>
+</head>
+<body class="body">
+  <div class="body-container">
+
+    <header class="header">
+
+      <div class="header-logo-desktop">
+        <a class="logo-desktop" href="index.html">
+          <img src="../source/img/logotype-white-desktop.png" width="147" height="40" alt="Логотип Pink">
+        </a>
+      </div>
+
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">
+              Открыть меню
+            </span>
+          </button>
+          <div class="main-nav__list-wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__list-item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="catalog.html">Фотография</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+      </header>
+
+      <main class="main-form">
+        <div class="main-form-heading">
+          <h1 class="main-form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
+
+        <section class="registration">
+
+          <h2 class="registration__title">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          </h2>
+
+          <form class="registration-form" action="https://echo.htmlacademy.ru" method="post" id="registration">
+
+            <fieldset class="personal-data">
+              <label class="personal-data__surname">
+                Фамилия:
+                <input type="text" name="Фамилия" required="" placeholder="Укажите Фамилию *">
+              </label>
+              <label class="personal-data__forename">
+                Имя:
+                <input type="text" name="Имя" required="" placeholder="Укажите Имя *">
+              </label>
+              <label class="personal-data__patronymic">
+                Отчество:
+                <input type="text" name="Отчество" placeholder="Укажите Отчество">
+              </label>
+            </fieldset>
+
+            <fieldset class="achievement">
+              <legend class="achievement__title">
+                Ваши безбашенные достижения в путешествии
+              </legend>
+
+              <ul class="achievement-list">
+                <li class="achievement-list__item">
+                  <label class="achievement-list__shark-selfi">
+                    <input type="checkbox" name="shark-selfi" checked="">
+                    Сделал селфи с акулой
+                  </label>
+                </li>
+                <li class="achievement-list__item">
+                  <label class="achievement-list__badly-burned">
+                    <input type="checkbox" name="badly burned" checked="">
+                    Обгорел на пляже
+                  </label>
+                </li>
+                <li class="achievement-list__item">
+                  <label class="achievement-list__chuck-norris">
+                    <input type="checkbox" name="Chuck norris">
+                    Видел Чака Норриса
+                  </label>
+                </li>
+                <li class="achievement-list__item">
+                  <label class="achievement-list__souvenirs">
+                    <input type="checkbox" name="souvenirs">
+                    Накупил сувениров
+                  </label>
+                </li>
+                <li class="achievement-list__item">
+                  <label class="achievement-list__tower-of-pisa">
+                    <input type="checkbox" name="tower of Pisa" checked="">
+                    Удержал башню
+                  </label>
+                </li>
+                <li class="achievement-list__item">
+                  <label class="achievement-list__smashed-hotel">
+                    <input type="checkbox" name="smashed hotel">
+                    Разгромил отель
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="registration-contacts">
+              <label class="registration__phone">
+                Номер телефона
+                <input type="tel" name="phone" placeholder="Номер, пожалуйста">
+              </label>
+              <label class="registration__mail">
+                Адрес почты
+                <input type="email" name="mail" required="" placeholder="Введите почту *">
+              </label>
+            </fieldset>
+
+            <fieldset class="operating-system">
+              <legend class="operating-system__title">С каким приложением путешествовали?
+              </legend>
+
+              <ul class="operating-system-list">
+                <li class="operating-system-list__item">
+                  <label class="operating-system-list__ios">
+                    <input type="radio" name="Operating system" checked="">
+                    Pink для IOS
+                  </label>
+                </li>
+                <li class="operating-system-list__item">
+                  <label class="operating-system-list__ios">
+                    <input type="radio" name="Operating system">
+                    Pink на Android
+                  </label>
+                </li>
+                <li class="operating-system-list__item">
+                  <label class="operating-system-list__ios">
+                    <input type="radio" name="Operating system">
+                    Window Phone
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="registration-comment">
+              <label class="registration-comment__title">
+                Опищиет свои эмоции
+                <textarea form="registration" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </label>
+            </fieldset>
+
+            <button class="registration__button" type="submit">Отправить форму</button>
+            <p class="registration__footnote"><strong>*</strong>-Обязательные поля</p>
+          </form>
+
+        </section>
+
+      </main>
+
+      <footer class="footer">
+        <img class="footer_logo" src="../source/img/logotype-blue-desktop.png" alt="Логотип Pink">
+
+        <div class="footer_social">
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a href="#">Twitter</a>
+            </li>
+            <li class="social-list__item">
+              <a href="#">Facebook</a>
+            </li>
+            <li class="social-list__item">
+              <a href="#">Youtube</a>
+            </li>
+          </ul>
+        </div>
+
+        <a class="footer_HTMLAcademy-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+      </footer>
+
+  </div>
+</body>
+</html>
