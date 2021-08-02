@@ -21,17 +21,17 @@
               </span>
             </button>
             <div class="main-nav__list-wrapper">
-              <ul class="main-nav_list">
-                <li class="main-nav_list-item">
+              <ul class="main-nav__list">
+                <li class="main-nav__list-item">
                   <a href="index.html">Главная</a>
                 </li>
-                <li class="main-nav_list-item">
+                <li class="main-nav__list-item">
                   <a href="#">Фотография</a>
                 </li>
-                <li class="main-nav_list-item">
+                <li class="main-nav__list-item">
                   <a href="#">Конкурс</a>
                 </li>
-                <li class="main-nav_list-item">
+                <li class="main-nav__list-item">
                   <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
                 </li>
               </ul>
@@ -47,9 +47,9 @@
             Взгляните на жизнь иначе!
           </h2>
 
-          <article class="download-app">
-            <a class="download-app__link" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
-          </article>
+          <div class="download-app">
+            <a class="download__link" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
+          </div>
 
             <ul class="download-list">
               <li class="download-list__item">
@@ -143,14 +143,14 @@
         </section>
 
         <section class="reviews">
-          <button class="reviews__forward slider__button" type="button">
-            <span class="visually-hidden">
-              Вперёд
-            </span>
-          </button>
 
           <div class="wrapper slider">
 
+            <button class="reviews__forward slider__button" type="button">
+              <span class="visually-hidden">
+                Вперёд
+              </span>
+            </button>
             <h2 class="visually-hidden">Отзывы</h2>
             <div class="reviews__list slider__item">
               <blockquote class="reviews__item">
@@ -194,13 +194,13 @@
               <button class="slider__toggle" type="button">3</button>
             </p>
 
-          </div>
-
             <button class="reviews__backward slider__button" type="button">
               <span class="visually-hidden">
                 Назад
               </span>
             </button>
+          </div>
+
         </section>
 
         <div class="tariff-list slider">
@@ -271,11 +271,11 @@
             </li>
           </ul>
 
-        <p class="tariff__toggles slider__toggles">
-          <button class="slider__toggle slider__toggle--current" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
+          <p class="tariff-list__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--current" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
 
         </div>
 
@@ -306,13 +306,13 @@
           </p>
         </section>
 
-        <article class="map">
+        <div class="map">
           <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&utm_medium=mapframe&utm_source=maps&z=17.14" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUQq0DbCD" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-        </article>
+        </div>
       </main>
 
       <footer class="footer">
-        <img class="footer_logo" src="../source/img/logotype-blue-desktop.png">
+        <img class="footer_logo" src="../source/img/logotype-blue-desktop.png" alt="Логотип Pink">
 
         <div class="footer_social">
           <ul class="social-list">
