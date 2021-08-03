@@ -47,21 +47,22 @@
         </div>
 
         <section class="registration">
+          <div class="additional-heading">
+            <h2 class="additional-heading__title">
+              Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            </h2>
+          </div>
 
-          <h2 class="registration__title">
-            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-          </h2>
-
-          <form class="registration-form" action="https://echo.htmlacademy.ru" method="post" id="registration">
+          <form class="registration-form" action="https://echo.htmlacademy.ru" method="post">
 
             <fieldset class="personal-data">
               <label class="personal-data__surname">
                 Фамилия:
-                <input type="text" name="Фамилия" required="" placeholder="Укажите Фамилию *">
+                <input type="text" name="Фамилия" required placeholder="Укажите Фамилию *">
               </label>
               <label class="personal-data__forename">
                 Имя:
-                <input type="text" name="Имя" required="" placeholder="Укажите Имя *">
+                <input type="text" name="Имя" required placeholder="Укажите Имя *">
               </label>
               <label class="personal-data__patronymic">
                 Отчество:
@@ -121,7 +122,7 @@
               </label>
               <label class="registration__mail">
                 Адрес почты
-                <input type="email" name="mail" required="" placeholder="Введите почту *">
+                <input type="email" name="mail" required placeholder="Введите почту *">
               </label>
             </fieldset>
 
@@ -132,20 +133,20 @@
               <ul class="operating-system-list">
                 <li class="operating-system-list__item">
                   <label class="operating-system-list__ios">
-                    <input type="radio" name="Operating system" checked="">
+                    <input type="radio" name="Operating system" checked="" value="Ios">
                     Pink для IOS
                   </label>
                 </li>
                 <li class="operating-system-list__item">
-                  <label class="operating-system-list__ios">
-                    <input type="radio" name="Operating system">
+                  <label class="operating-system-list__android">
+                    <input type="radio" name="Operating system" value="Android">
                     Pink на Android
                   </label>
                 </li>
                 <li class="operating-system-list__item">
-                  <label class="operating-system-list__ios">
-                    <input type="radio" name="Operating system">
-                    Window Phone
+                  <label class="operating-system-list__windows">
+                    <input type="radio" name="Operating system" value="Windows">
+                    Windows Phone
                   </label>
                 </li>
               </ul>
@@ -154,7 +155,7 @@
             <fieldset class="registration-comment">
               <label class="registration-comment__title">
                 Опищиет свои эмоции
-                <textarea form="registration" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                <textarea name="review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </label>
             </fieldset>
 
@@ -167,9 +168,9 @@
       </main>
 
       <footer class="footer">
-        <img class="footer_logo" src="../source/img/logotype-blue-desktop.png" alt="Логотип Pink">
+        <img class="footer__logo" src="../source/img/logotype-blue-desktop.png" alt="Логотип Pink">
 
-        <div class="footer_social">
+        <div class="footer__social">
           <ul class="social-list">
             <li class="social-list__item">
               <a href="#">Twitter</a>
@@ -183,7 +184,7 @@
           </ul>
         </div>
 
-        <a class="footer_HTMLAcademy-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+        <a class="footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
       </footer>
 
       <section class="pop-up-wrong">
