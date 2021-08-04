@@ -46,69 +46,70 @@
           <h1 class="main-form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
 
-        <section class="registration">
           <div class="additional-heading">
             <h2 class="additional-heading__title">
               Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
             </h2>
           </div>
 
+        <section class="registration">
+
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
             <fieldset class="form__fieldset">
               <label class="form__text-field-label">
                 Фамилия:
-                <input type="text" name="Фамилия" required placeholder="Укажите Фамилию *">
+                <input class="form__text-field" type="text" name="suraname" required placeholder="Укажите Фамилию *">
               </label>
               <label class="form__text-field-label">
                 Имя:
-                <input type="text" name="Имя" required placeholder="Укажите Имя *">
+                <input class="form__text-field" type="text" name="name" required placeholder="Укажите Имя *">
               </label>
               <label class="form__text-field-label">
                 Отчество:
-                <input type="text" name="Отчество" placeholder="Укажите Отчество">
+                <input class="form__text-field" type="text" name="patronymic" placeholder="Укажите Отчество">
               </label>
             </fieldset>
 
             <fieldset class="form__fieldset">
-              <legend class="fieldset__title">
+              <legend class="form__title">
                 Ваши безбашенные достижения в путешествии
               </legend>
 
-              <ul class="fieldset-list">
-                <li class="fieldset-list__item">
-                  <label class="form__checkbox-field-label">
-                    <input type="checkbox" name="shark-selfi" checked="">
+              <ul class="form__checkbox-list">
+                <li class="form__checkbox-list-item">
+                  <label class="form__checkbox-label">
+                    <input class="form__checkbox" type="checkbox" name="shark-selfi" checked="">
                     Сделал селфи с акулой
                   </label>
                 </li>
-                <li class="fieldset-list__item">
-                  <label class="form__checkbox-field-label">
-                    <input type="checkbox" name="badly burned" checked="">
+                <li class="form__checkbox-list-item">
+                  <label class="form__checkbox-label">
+                    <input class="form__checkbox" type="checkbox" name="badly_burned" checked="">
                     Обгорел на пляже
                   </label>
                 </li>
-                <li class="fieldset-list__item">
-                  <label class="form__checkbox-field-label">
-                    <input type="checkbox" name="Chuck norris">
+                <li class="form__checkbox-list-item">
+                  <label class="form__checkbox-label">
+                    <input class="form__checkbox" type="checkbox" name="chuck_norris">
                     Видел Чака Норриса
                   </label>
                 </li>
-                <li class="fieldset-list__item">
-                  <label class="form__checkbox-field-label">
-                    <input type="checkbox" name="souvenirs">
+                <li class="form__checkbox-list-item">
+                  <label class="form__checkbox-label">
+                    <input class="form__checkbox" type="checkbox" name="souvenirs">
                     Накупил сувениров
                   </label>
                 </li>
-                <li class="fieldset-list__item">
-                  <label class="form__checkbox-field-label">
-                    <input type="checkbox" name="tower of Pisa" checked="">
+                <li class="form__checkbox-list-item">
+                  <label class="form__checkbox-label">
+                    <input class="form__checkbox" type="checkbox" name="tower_of_Pisa" checked="">
                     Удержал башню
                   </label>
                 </li>
-                <li class="fieldset-list__item">
-                  <label class="form__checkbox-field-label">
-                    <input type="checkbox" name="smashed hotel">
+                <li class="form__checkbox-list-item">
+                  <label class="form__checkbox-label">
+                    <input class="form__checkbox" type="checkbox" name="smashed_hotel">
                     Разгромил отель
                   </label>
                 </li>
@@ -118,35 +119,35 @@
             <fieldset class="form__fieldset">
               <label class="form__tel-field-label">
                 Номер телефона
-                <input type="tel" name="phone" placeholder="Номер, пожалуйста">
+                <input class="form__text-field form__text-field--tel" type="tel" name="phone" placeholder="Номер, пожалуйста">
               </label>
               <label class="form__email-field-label">
                 Адрес почты
-                <input type="email" name="mail" required placeholder="Введите почту *">
+                <input class="form__text-field form__text-field--email" type="email" name="mail" required placeholder="Введите почту *">
               </label>
             </fieldset>
 
             <fieldset class="form__fieldset">
-              <legend class="fieldset__title">
+              <legend class="form__title">
                 С каким приложением путешествовали?
               </legend>
 
               <ul class="fieldset-list">
                 <li class="fieldset-list__item">
                   <label class="form__radio-field-label">
-                    <input type="radio" name="Operating system" checked="" value="Ios">
+                    <input type="radio" name="operating_system" checked="" value="ios">
                     Pink для IOS
                   </label>
                 </li>
                 <li class="fieldset-list__item">
                   <label class="form__radio-field-label">
-                    <input type="radio" name="Operating system" value="Android">
+                    <input type="radio" name="operating_system" value="android">
                     Pink на Android
                   </label>
                 </li>
                 <li class="fieldset-list__item">
                   <label class="form__radio-field-label">
-                    <input type="radio" name="Operating system" value="Windows">
+                    <input type="radio" name="operating_system" value="windows">
                     Windows Phone
                   </label>
                 </li>
@@ -156,7 +157,7 @@
             <fieldset class="form__fieldset">
               <label class="form__textarea-field-label">
                 Опищиет свои эмоции
-                <textarea name="review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                <textarea class="form__textarea" name="review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </label>
             </fieldset>
 

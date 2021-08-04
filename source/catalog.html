@@ -42,15 +42,17 @@
       </header>
 
       <main class="main-catalog">
-        <div class="additional-heading">
-          <h1 class="additional-heading__title">Фотографии пользователей</h1>
+        <div class="main-catalog-heading">
+          <h1 class="main-catalog-heading__title">Фотографии пользователей</h1>
         </div>
 
-        <section class="user-photo">
-          <div class="user-photo-heading">
-            <h2 class="user-photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+          <div class="additional-heading">
+            <h2 class="additional-heading__title">
+              Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+            </h2>
           </div>
 
+        <section class="user-photo">
           <ul class="user-photo-list">
             <li class="user-photo-list__main-item">
               <a href="#"><img class="user-photo-list__main-photo" src="../source/img/panorama-tablet.jpg" width="320" height="137" alt="Висячий мост"></a>
@@ -146,35 +148,35 @@
         <section class="editor">
           <img class="editor__photo" src="../source/img/photo-7-tablet.jpg">
 
-          <form class="editor-form" action="https://echo.htmlacademy.ru" method="post">
-            <ul class="editor-form-list">
-              <li class="editor-form__item-crop">
+          <form class="editor__form" action="https://echo.htmlacademy.ru" method="post">
+            <ul class="editor__list">
+              <li class="editor__list-item editor-item--crop">
                 <input class="visually-hidden" type="range" name="crop">
-                <div class="editor-form__range-filter-crop range-filter">
+                <div class="range-filter--crop range-filter">
                   <div class="range-filter__scale"></div>
-                  <div class="range-filter__toggle" aria-label="Переключатель"></div>
+                  <div class="range-filter__toggle"></div>
                 </div>
                 </div>
               </li>
-              <li class="editor-form__item-intensity">
+              <li class="editor__list-item editor-item--intensity">
                 <input class="visually-hidden" type="range" name="intensity">
-                <div class="editor-form__range-filter-intensity range-filter">
+                <div class="range-filter--intensity range-filter">
                   <div class="range-filter__scale"></div>
-                  <div class="range-filter__toggle" aria-label="Переключатель"></div>
+                  <div class="range-filter__toggle"></div>
                 </div>
                 </div>
               </li>
-              <li class="editor-form__item-brightness">
+              <li class="editor__list-item editor-item--brightness">
                 <input class="visually-hidden" type="range" name="brightness">
-                <div class="editor-form__range-filter-brightness range-filter">
+                <div class="range-filter--brightness range-filter">
                   <div class="range-filter__scale"></div>
-                  <div class="range-filter__toggle" aria-label="Переключатель"></div>
+                  <div class="range-filter__toggle"></div>
                 </div>
                 </div>
               </li>
             </ul>
-            <div class="button--active"><button class="editor-form__button" class="submit">Запостить</button></div>
-            <div class="button--inactive"><button class="editor-form__button" type="reset">Отмена</button></div>
+            <button class="editor__button button--active" class="submit">Запостить</button>
+            <button class="editor__button button--inactive" type="reset">Отмена</button>
           </form>
         </section>
 
