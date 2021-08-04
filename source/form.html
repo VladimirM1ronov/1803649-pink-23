@@ -15,29 +15,29 @@
         </a>
       </div>
 
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">
-              Открыть меню
-            </span>
-          </button>
-          <div class="main-nav__list-wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__list-item">
-                <a href="index.html">Главная</a>
-              </li>
-              <li class="main-nav__list-item">
-                <a href="catalog.html">Фотография</a>
-              </li>
-              <li class="main-nav__list-item">
-                <a href="form.html">Конкурс</a>
-              </li>
-              <li class="main-nav__list-item">
-                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
+        </button>
+        <div class="main-nav__list-wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="catalog.html">Фотография</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
       </header>
 
@@ -53,61 +53,61 @@
             </h2>
           </div>
 
-          <form class="registration-form" action="https://echo.htmlacademy.ru" method="post">
+          <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
-            <fieldset class="personal-data">
-              <label class="personal-data__surname">
+            <fieldset class="form__fieldset">
+              <label class="form__text-field-label">
                 Фамилия:
                 <input type="text" name="Фамилия" required placeholder="Укажите Фамилию *">
               </label>
-              <label class="personal-data__forename">
+              <label class="form__text-field-label">
                 Имя:
                 <input type="text" name="Имя" required placeholder="Укажите Имя *">
               </label>
-              <label class="personal-data__patronymic">
+              <label class="form__text-field-label">
                 Отчество:
                 <input type="text" name="Отчество" placeholder="Укажите Отчество">
               </label>
             </fieldset>
 
-            <fieldset class="achievement">
-              <legend class="achievement__title">
+            <fieldset class="form__fieldset">
+              <legend class="fieldset__title">
                 Ваши безбашенные достижения в путешествии
               </legend>
 
-              <ul class="achievement-list">
-                <li class="achievement-list__item">
-                  <label class="achievement-list__shark-selfi">
+              <ul class="fieldset-list">
+                <li class="fieldset-list__item">
+                  <label class="form__checkbox-field-label">
                     <input type="checkbox" name="shark-selfi" checked="">
                     Сделал селфи с акулой
                   </label>
                 </li>
-                <li class="achievement-list__item">
-                  <label class="achievement-list__badly-burned">
+                <li class="fieldset-list__item">
+                  <label class="form__checkbox-field-label">
                     <input type="checkbox" name="badly burned" checked="">
                     Обгорел на пляже
                   </label>
                 </li>
-                <li class="achievement-list__item">
-                  <label class="achievement-list__chuck-norris">
+                <li class="fieldset-list__item">
+                  <label class="form__checkbox-field-label">
                     <input type="checkbox" name="Chuck norris">
                     Видел Чака Норриса
                   </label>
                 </li>
-                <li class="achievement-list__item">
-                  <label class="achievement-list__souvenirs">
+                <li class="fieldset-list__item">
+                  <label class="form__checkbox-field-label">
                     <input type="checkbox" name="souvenirs">
                     Накупил сувениров
                   </label>
                 </li>
-                <li class="achievement-list__item">
-                  <label class="achievement-list__tower-of-pisa">
+                <li class="fieldset-list__item">
+                  <label class="form__checkbox-field-label">
                     <input type="checkbox" name="tower of Pisa" checked="">
                     Удержал башню
                   </label>
                 </li>
-                <li class="achievement-list__item">
-                  <label class="achievement-list__smashed-hotel">
+                <li class="fieldset-list__item">
+                  <label class="form__checkbox-field-label">
                     <input type="checkbox" name="smashed hotel">
                     Разгромил отель
                   </label>
@@ -115,36 +115,37 @@
               </ul>
             </fieldset>
 
-            <fieldset class="registration-contacts">
-              <label class="registration__phone">
+            <fieldset class="form__fieldset">
+              <label class="form__tel-field-label">
                 Номер телефона
                 <input type="tel" name="phone" placeholder="Номер, пожалуйста">
               </label>
-              <label class="registration__mail">
+              <label class="form__email-field-label">
                 Адрес почты
                 <input type="email" name="mail" required placeholder="Введите почту *">
               </label>
             </fieldset>
 
-            <fieldset class="operating-system">
-              <legend class="operating-system__title">С каким приложением путешествовали?
+            <fieldset class="form__fieldset">
+              <legend class="fieldset__title">
+                С каким приложением путешествовали?
               </legend>
 
-              <ul class="operating-system-list">
-                <li class="operating-system-list__item">
-                  <label class="operating-system-list__ios">
+              <ul class="fieldset-list">
+                <li class="fieldset-list__item">
+                  <label class="form__radio-field-label">
                     <input type="radio" name="Operating system" checked="" value="Ios">
                     Pink для IOS
                   </label>
                 </li>
-                <li class="operating-system-list__item">
-                  <label class="operating-system-list__android">
+                <li class="fieldset-list__item">
+                  <label class="form__radio-field-label">
                     <input type="radio" name="Operating system" value="Android">
                     Pink на Android
                   </label>
                 </li>
-                <li class="operating-system-list__item">
-                  <label class="operating-system-list__windows">
+                <li class="fieldset-list__item">
+                  <label class="form__radio-field-label">
                     <input type="radio" name="Operating system" value="Windows">
                     Windows Phone
                   </label>
@@ -152,15 +153,15 @@
               </ul>
             </fieldset>
 
-            <fieldset class="registration-comment">
-              <label class="registration-comment__title">
+            <fieldset class="form__fieldset">
+              <label class="form__textarea-field-label">
                 Опищиет свои эмоции
                 <textarea name="review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </label>
             </fieldset>
 
-            <button class="registration__button" type="submit">Отправить форму</button>
-            <p class="registration__footnote"><strong>*</strong>-Обязательные поля</p>
+            <button class="form__button" type="submit">Отправить форму</button>
+            <p class="form__footnote"><strong>*</strong>-Обязательные поля</p>
           </form>
 
         </section>
