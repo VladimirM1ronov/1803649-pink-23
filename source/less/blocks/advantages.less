@@ -3,22 +3,36 @@
   padding-top: 46px;
   padding-right: 20px;
   padding-left: 20px;
-  background-image: url"(../img/grey_background.png)";
   background-color: @grey;
   background-repeat: no-repeat;
 }
 
 .advantages__heading {
+  text-align: center;
   font-weight: 300;
   font-size: @font-big;
   line-height: 120%;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: @font-big-tablet;
+    width: 583px;
+    text-align: center;
+    margin-left: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: @font-big-desktop;
+    width: 730px;
+    margin: 0 auto;
+  }
 }
 
-.advantages-list {
-  .reset-list-style();
-}
+.advantages__heading span {
+  display: block;
+  margin-top: 46px;
 
-.advantages-list__title {
-  font-size: @font-medium;
-  color: @basic-black;
+  @media (min-width: @tablet-width) {
+    display: inline;
+  }
 }

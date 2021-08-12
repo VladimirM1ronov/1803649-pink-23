@@ -5,20 +5,53 @@
   padding-right: 36px;
   padding-bottom: 10px;
   background-color: @color-main;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 345px;
+  }
 }
 
 .contacts__heading {
+  font-weight: 300;
+  text-align: center;
   font-size: @font-big;
   line-height: 120%;
+
+  @media (min-width: @tablet-width) {
+    font-size: @font-big-tablet;
+    min-width: 581px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: @font-big-desktop;
+    justify-self: center;
+  }
+}
+
+.contacts__heading span {
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
 
 .contacts__phone {
+  text-align: -webkit-center;
   font-weight: 700;
   font-size: @font-medium;
   line-height: unset;
 }
 
 .contacts__phone-link {
+  display: block;
+  width: 206px;
   font-weight: 300;
   text-decoration: none;
   font-size: @font-big;
@@ -26,26 +59,64 @@
   color: @color-tertiary;
 }
 
+.contacts__adress {
+  width: 211px;
+
+  @media (min-width: @tablet-width) {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-left: 100px;
+  }
+}
+
 .contacts__adress-description {
+  text-align: center;
   font-weight: 700;
   font-size: @font-medium;
   line-height: unset;
+  margin: 0;
 }
 
 .contacts__adress-direct {
+  text-align: center;
   font-weight: 300;
   font-size: @font-big;
   line-height: unset;
   color: @color-tertiary;
+  margin: 0;
 }
 
 .contacts__mail {
+  text-align: center;
   font-weight: 700;
   font-size: @font-medium;
   line-height: unset;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin-left: 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-left: 180px;
+  }
 }
 
 .contacts__mail-link {
+  display: block;
+  text-align: center;
   font-weight: 300;
   text-decoration: none;
   font-size: @font-big;

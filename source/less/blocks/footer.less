@@ -3,10 +3,21 @@
   box-sizing: border-box;
   padding: 40px 74px;
   background-color: @color-main;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .social-list {
   .reset-list-style();
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 172px;
+  }
 }
 
 .social-list__item a {

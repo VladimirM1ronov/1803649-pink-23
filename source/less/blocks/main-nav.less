@@ -4,8 +4,22 @@
   line-height: 32px;
 }
 
+.main-nav__toggle {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .main-nav__list {
   .reset-list-style();
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    font-weight: 400;
+  }
 }
 
 .main-nav__list-item a {

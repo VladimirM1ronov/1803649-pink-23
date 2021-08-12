@@ -1,0 +1,21 @@
+.download-list {
+  .reset-list-style();
+  background-color: @color-secondary;
+  padding-top: 11px;
+  padding-right: 58px;
+  padding-left: 58px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    width: 204px;
+    padding-bottom: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}

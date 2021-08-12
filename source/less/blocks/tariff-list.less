@@ -1,20 +1,53 @@
 .tariff-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   box-sizing: border-box;
   line-height: 30px;
   padding-bottom: 49px;
   background-color: @grey;
   background-image: url("../img/grey_background.png");
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    flex-wrap: no-wrap;
+  }
+}
+
+.tariff-list__item {
+  @media (min-width: @tablet-width) {
+    width: 152px;
+    height: 45px;
+    background-color: @color-main;
+    border: 2px solid @grey-lighten;
+  }
 }
 
 .tariff-list__title {
+  text-align: center;
   font-weight: 700;
   font-size: @font-bigger-main;
   color: @color-main;
+  background-color: @color-secondary;
 }
 
 .tariff-list__title-description {
+  text-align: center;
   font-size: @font-medium;
+  font-weight: 300;
   text-transform: uppercase;
   color: @color-main;
+  background-color: @color-secondary;
+}
+
+.tariff-list__description {
+  width: 276px;
+  height: 59px;
+  text-align: center;
+  background-color: @color-main;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

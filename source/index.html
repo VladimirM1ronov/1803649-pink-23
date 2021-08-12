@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
@@ -10,9 +11,9 @@
 
       <header class="header">
 
-        <div class="header-logo-desktop">
-          <a class="logo-desktop" href="index.html">
-            <img src="../source/img/logotype-white-desktop.png" width="147" height="40" alt="Логотип Pink">
+        <div class="header-logo">
+          <a class="logo" href="index.html">
+            <img src="../source/img/pink.svg" width="74" height="23" alt="Логотип Pink">
           </a>
         </div>
 
@@ -45,12 +46,14 @@
       <main class="main">
         <h1 class="visually-hidden">Pink</h1>
         <section class="download">
-          <h2 class="download__heading">
-            Взгляните на жизнь иначе!
-          </h2>
+          <div class="download__heading-wrapper">
+            <h2 class="download__heading">
+              Взгляните на жизнь иначе!
+            </h2>
+          </div>
 
           <div class="download-app">
-            <a class="download__link button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
+            <p class="button download-app__button"><a class="download__link" href="https://www.apple.com/ru/app-store/">Скачать приложение</a></p>
           </div>
 
             <ul class="download-list">
@@ -95,7 +98,7 @@
             </h2>
 
             <h3 class="advantages__heading">
-              Устали от серости мегаполиса? Нам есть, что вам предложить!
+              Устали от серости мегаполиса? <span>Нам есть, что вам предложить!</span>
             </h3>
 
               <ul class="advantages-list">
@@ -155,39 +158,45 @@
             </button>
             <h2 class="visually-hidden">Отзывы</h2>
             <div class="reviews__list slider__item">
-              <blockquote class="reviews__item">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-                <cite class="reviews__author">
+              <div class="reviews__item">
+                <p class="reviews__description">
+                  «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                </p>
+                <p class="reviews__author">
                   Николай Петров
-                </cite>
+                </p>
                 <p class="reviews__age-job">
                   25 лет, водитель трамвая
                 </p>
-              </blockquote>
+              </div>
             </div>
 
             <div class="reviews__list slider__item">
-              <blockquote class="reviews__item">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-                <cite class="reviews__author">
+              <div class="reviews__item">
+                <p class="reviews__description">
+                  «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                </p>
+                <p class="reviews__author">
                   Николай Петров
-                </cite>
+                </p>
                 <p class="reviews__age-job">
                   25 лет, водитель трамвая
                 </p>
-              </blockquote>
+              </div>
             </div>
 
             <div class="reviews__list slider__item">
-              <blockquote class="reviews__item">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-                <cite class="reviews__author">
+              <div class="reviews__item">
+                <p class="reviews__description">
+                  «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                </p>
+                <p class="reviews__author">
                   Николай Петров
-                </cite>
+                </p>
                 <p class="reviews__age-job">
                   25 лет, водитель трамвая
                 </p>
-              </blockquote>
+              </div>
             </div>
 
             <p class="reviews__toggles slider__toggles">
@@ -283,7 +292,7 @@
 
         <section class="contacts">
           <h2 class="contacts__heading">
-            Остались вопросы? Свяжитесь с нами!
+            Остались вопросы? <span>Свяжитесь с нами!<span>
           </h2>
 
           <p class="contacts__phone">
@@ -291,6 +300,11 @@
             <a class="contacts__phone-link" href="tel:+78125556666">
               <span>+7 (812) 555-66-66</span>
             </a>
+          </p>
+
+          <p class="contacts__mail">
+            Пишите:
+            <a class="contacts__mail-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
 
           <div class="contacts__adress">
@@ -301,11 +315,6 @@
               ул. Большая Конюшенная, 19/8
             </p>
           </div>
-
-          <p class="contacts__mail">
-            Пишите:
-            <a class="contacts__mail-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </p>
         </section>
 
         <div class="map">
