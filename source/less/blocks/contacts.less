@@ -7,13 +7,17 @@
   background-color: @color-main;
 
   @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
 
   @media (min-width: @desktop-width) {
+    width: @desktop-width;
     height: 345px;
+    margin: 0 auto;
   }
 }
 
