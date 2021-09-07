@@ -5,6 +5,18 @@
   background-color: @color-main;
 }
 
+.footer .container {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .social-list {
   .reset-list-style();
 
